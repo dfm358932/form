@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airtable Form Embed</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #111;
+        font-family: Arial, sans-serif;
+      }
+
+      .embed-wrapper {
+        width: min(1000px, 92vw);
+        background: #000;
+        padding: 1rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      }
+
+      .airtable-embed {
+        display: block;
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="embed-wrapper" aria-label="Airtable embed container">
+      <iframe
+        class="airtable-embed"
+        src="https://airtable.com/embed/appGLbaQ6ulRmyoBa/pagTAFrHjgHKnccdQ/form"
+        frameborder="0"
+        onmousewheel=""
+        width="100%"
+        height="600"
+        style="background: transparent; border: 1px solid #ccc;"
+      ></iframe>
+    </main>
+  </body>
+</html>
